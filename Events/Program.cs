@@ -32,10 +32,13 @@ namespace Events
 
         public void CheckBalance (int x)
         {
-            if (x > 250)
+            if (x >= 250)
             {
                 Evt("ATTENTION!!! The current balance exceeds 250...");
             }
+            else
+                Evt("Correct Balance");
+
         }
     }
 
